@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 //import FormsModule here
 import { FormsModule } from '@angular/forms'; 
@@ -19,6 +20,7 @@ import { QrReaderComponent } from './qr-reader/qr-reader.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    BrowserAnimationsModule,
     ZXingScannerModule,
     FormsModule   //Assign FormsModule
  ],

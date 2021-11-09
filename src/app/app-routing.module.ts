@@ -6,8 +6,8 @@ import { PdfFormComponent } from './pdf-form/pdf-form.component';
 import { QrReaderComponent } from './qr-reader/qr-reader.component';
 
 const routes: Routes = [
-  { path: 'pdf-reader', component: PdfFormComponent },
-  { path: 'qr-reader', component: QrReaderComponent }
+  { path: 'pdf-reader', component: PdfFormComponent, data: { animation: 'isLeft' } },
+  { path: 'qr-reader', component: QrReaderComponent, data: { animation: 'isRight' } }
 ];
 
 @NgModule({

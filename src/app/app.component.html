@@ -1,13 +1,12 @@
 <!doctype html>
 <html lang="en" >
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   </head>
-
+  
   <body>
-    <div class="min-vw-100">
+    <div class="min-vw-100" id="particles-js">
       <div class="min-vh-100">
           <nav class="navbar navbar-light" style="background-color: #0a3553;">
               <div class="container">
@@ -17,24 +16,19 @@
               </div>
           </nav>
 
-          <div class="container">
-            <div class="row">
-                    <div class="col-md-4"></div>
-                            <div class="col-md-4">
-                                <div class="rounded-3">
-                                    <div class="form-group text-center"><br><br><br>
+          <div class="form-group text-center"><br><br><br>
+            <button type="button" class="btn btn-dark" routerLink="/pdf-reader" style="background-color: #0a3553; border: none;">PDF Reader </button>
+            &nbsp;
+            <button type="button" class="btn btn-dark" routerLink="/qr-reader" style="background-color: #0a3553; border: none;">QR Reader</button>
+          </div>
+          <br><br><br>
 
-                                      <button type="button" class="btn btn-dark" routerLink="/pdf-reader" style="background-color: #0a3553; border: none;">PDF Reader </button>
-                                      &nbsp;
-                                      <button type="button" class="btn btn-dark" routerLink="/qr-reader" style="background-color: #0a3553; border: none;">QR Reader</button>
-
-                                      <router-outlet></router-outlet>
-                                      
-                                    </div>
-                                </div>
-                            </div>
-                    <div class="col-md-4"></div>
-              </div>
+          <div class="container" style=" display: flex; justify-content: center"><br><br><br>
+            <div class="w-75 p-3">
+              <main [@routeAnimations]="prepareRoute(outlet)" class="content">
+                <router-outlet #outlet="outlet"></router-outlet>
+              </main>
+            </div>
           </div>
         </div>
       </div>
