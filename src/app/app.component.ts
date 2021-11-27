@@ -14,7 +14,6 @@ export class AppComponent {
   title = 'Form';
   
   public ngOnInit(): void {
-    particlesJS.load('particles-js', 'particles.json', null);
   }
 
   prepareRoute(outlet: RouterOutlet) {

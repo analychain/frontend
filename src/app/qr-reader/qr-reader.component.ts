@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Location } from '@angular/common';
+import { Router } from '@angular/router';
+import { EventService } from '../event.service';
 
 @Component({
   selector: 'app-qr-reader',
@@ -8,7 +10,10 @@ import { Location } from '@angular/common';
 })
 export class QrReaderComponent implements OnInit {
 
-  constructor(private location: Location) {}
+  constructor(
+    private location: Location,
+    private router: Router,
+    private eventService: EventService) {}
 
   ngOnInit(): void {
     
@@ -20,8 +25,13 @@ export class QrReaderComponent implements OnInit {
     this.qrResultString = '';
   }
 
-  onCodeResult(resultString: string) {
+  public onCodeResult(resultString: string) {
     this.qrResultString = resultString;
+    this.eventService.emit<string>(this.qrResultString); //emits data to visualizer component
+    var code_ = this.qrResultString.split("+", 2)
+    this.router.navigate(['/visualizer'], {queryParams:{code: code_[1]}});
+    console.log(code_[1]);
+    
   }
 
   goBack(): void {

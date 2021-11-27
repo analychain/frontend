@@ -1,0 +1,62 @@
+
+<div class="ext-centert">
+  <p class="lead" *ngIf="loading">
+    <img src="assets/loading.gif" alt="" width="40%" height="40%">
+  </p>
+</div>
+<div class="table-responsive">
+  <table *ngIf="!loading" class="table table-hover text-start" style="color: white; opacity: 0.9;">
+    <tbody>
+      <tr>
+        <th scope="row">ID</th>
+        <td>{{fetchSampleService.result.id}}</td>
+      </tr>
+      <tr>
+      <tr>
+        <th scope="row">Code</th>
+        <td>{{fetchSampleService.result.code}}</td>
+      </tr>
+      <tr>
+      <tr>
+        <th scope="row">Office</th>
+        <td>{{fetchSampleService.result.office}}</td>
+      </tr>
+      <tr>
+      <tr>
+        <th scope="row">Subject</th>
+        <td>{{fetchSampleService.result.subject}}</td>
+      </tr>
+      <tr>
+      <tr>
+        <th scope="row">Category</th>
+        <td>{{fetchSampleService.result.category}}</td>
+      </tr>
+      <tr>
+      <tr>
+        <th scope="row">Product</th>
+        <td>{{fetchSampleService.result.product}}</td>
+      </tr>
+      <tr>
+      <tr>
+        <th scope="row">Sample Type</th>
+        <td>{{fetchSampleService.result.sampleType}}</td>
+      </tr>
+      <tr>
+      <tr>
+        <th scope="row">Executed Tests</th>
+        <td>{{fetchSampleService.result.sampleExecutedTests}}</td>
+      </tr>
+      <tr>
+      <tr>
+        <th scope="row">Not Executed Tests</th>
+        <td>{{fetchSampleService.result.sampleNotExecutedTests}}</td>
+      </tr>
+      <tr>
+      <tr>
+        <th scope="row">Arrival Date</th>
+        <td>{{fetchSampleService.result.arrivalDate}}</td>
+      </tr>
+      <tr>
+    </tbody>
+  </table>
+</div>
