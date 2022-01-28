@@ -8,9 +8,9 @@ import { Sample } from './sample.model';
 
 
 export class FetchSampleService {
-    baseURL: string = 'https://e1j29u2fia-e1b0ep5tkz-connect.eu1-azure.kaleido.io/instances/0x529f2bfe822b4b3e947a0c6674bb7e4c60e45ed4/';
-    signingAddress: string = "0x74af1f410f920a7551fad6e1ca3069eee9c4b328";
-    token: string = "ZTF6OWMyZDhoNDoyaHVtUHBacXZqc0c4cHNVaW9JWDN1UFJNNjNQVFZrV3dPekVlSkQ2T1gw"
+    baseURL: string = 'https://e0oodyxcc4-e0guxf04n2-connect.de0-aws.kaleido.io/instances/0x9f047439f509d56cc6ceb7fd1924f7f3e64dc171/';
+    signingAddress: string = "0x7279faeda2cabd073af7139f60ac8719568045eb";
+    token: string = "ZTByMzh3dzVqcTp4MUt5ZmowaWx0TFROZEYwS3JjTmNBU0VaU281UnUzOGcwdFRjU2dPQ0hR";
  
     result!: Sample;
     loading: boolean;
