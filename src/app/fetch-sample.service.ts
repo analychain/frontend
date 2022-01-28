@@ -8,6 +8,7 @@ import { Sample } from './sample.model';
 
 
 export class FetchSampleService {
+    //URL
     baseURL: string = 'https://e0oodyxcc4-e0guxf04n2-connect.de0-aws.kaleido.io/instances/0x9f047439f509d56cc6ceb7fd1924f7f3e64dc171/';
     signingAddress: string = "0x7279faeda2cabd073af7139f60ac8719568045eb";
     token: string = "ZTByMzh3dzVqcTp4MUt5ZmowaWx0TFROZEYwS3JjTmNBU0VaU281UnUzOGcwdFRjU2dPQ0hR";
