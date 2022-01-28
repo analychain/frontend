@@ -20,8 +20,8 @@ export class PdfFormComponent implements OnInit {
 
   Validation() {
 
-    if (this.code == 'pippo') {
-        alert('Drogato di Merda')
+    if (this.code == 'Prova') {
+        alert('Compreso.')
     }
     else
         alert("Non ho capito, riprova.");
